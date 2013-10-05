@@ -1,0 +1,57 @@
+body {
+    background-image: url('../img/gplaypattern.png');
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+#logo-img {
+
+    display: block;
+    margin: 40px auto;
+
+}
+
+#nav li {
+    list-style: none;
+    display: inline;
+    padding-right: 85px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+ #nav li:last-child {
+    padding: 0;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #000; 
+}
+
+#nav .active {
+    color: #46c3e7;
+}
+
+#content {
+    padding: 20px;
+}
+
+#footer li {
+
+    list-style: none;
+    display: inline;
+    padding: 0px 10px 0px 10px; 
+    font-size: 11px;
+}
+
+#footer li:first-child {
+    padding-left: 0px;
+}
+
+#footer li:last-child {
+    padding-right: 0px;
+}
