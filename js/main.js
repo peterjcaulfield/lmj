@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
-    $('#nav a').click(function(e){
+    $('#home').addClass('active-section');
+    $('#home').css('display', 'block');
+   
+    var lineArt = '<img src="img/line-art-' + Math.floor((Math.random()*6)+1) + '.png"/>';
+
+    $('#home').append(lineArt);
+
+    $('.nav a').click(function(e){
       
         e.preventDefault();
        
@@ -11,20 +18,15 @@ $(document).ready(function(){
         elem.addClass('active');
      
         var sectionId = '#' + elem.attr('href');
+        
+        $('.active-section').fadeOut(250, function(){
+         
+            $('.active-section').removeClass('active-section');
 
-        console.log(sectionId);
+            $(sectionId).fadeIn(250);
 
-        $('.active-section').fadeOut(500);
-
-        $('.active-section').removeClass('active-section');
-
-        $(sectionId).fadeIn(500);
-
-        $(sectionId).addClass('active-section');
-      
-      
+            $(sectionId).addClass('active-section');
+          
+          });
       });
-    
-    
-    
 });

@@ -47,8 +47,6 @@ table {
     border-spacing: 0;
 }
 
-p { margin-bottom: 30px; }
-
 body {
     background-image: url('../img/gplaypattern.png');
 }
@@ -99,19 +97,85 @@ body {
 }
 
 #content {
-    padding: 50px 180px 80px 120px;
+    padding: 50px 0px 80px 0px;
+    min-height: 430px;
 }
 
 .section { display: none;  overflow: auto;}
+.padded { padding: 0px 80px 0px 230px  } 
 
 .pink_text {
     color: #a40f84;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#home {
+    overflow: hidden;
 }
 
 #about_text {
     width: 300px;
     font-size: 15px;
     line-height: 1.6;
+}
+
+#about_text .pink_text {
+    margin-bottom: 30px;
+}
+
+#clients {
+    font-size: 17px;
+    overflow: hidden;
+}
+
+.bold_text {
+    font-weight: bold;
+    margin: 30px 0px 8px 0px;
+}
+
+.arrows {
+    margin-left: 40px;
+}
+
+#testimonials {
+    width: 400px;
+    font-size: 17px;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+#links {
+    
+    font-size: 17px;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+#links_text {
+    margin-left: 50px;
+}
+
+#contact {
+    
+    font-size: 17px;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+#contact_text {
+    width: 310px;
+    margin-left: 50px;
+}
+
+#contact_text a {
+    text-decoration: none;
+}
+
+#contact_text .contact {
+    margin: 8px 0px 15px 0px;
 }
 
 #footer ul {
@@ -132,6 +196,11 @@ body {
 
 #footer li:last-child {
     padding-right: 0px;
+}
+
+#footer a {
+    color: #a40f84;
+    text-decoration: none;
 }
 
 .left { float: left; }
