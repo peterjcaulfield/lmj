@@ -93,6 +93,10 @@ body {
     color: #000; 
 }
 
+#nav a:hover {
+    color: #46c4e8;
+}
+
 #nav .active {
     color: #46c3e7;
 }
@@ -110,7 +114,7 @@ body {
 }
 
 .bold {
-    font-weight: bold;
+    font-family: 'proxima_novaextrabold';
 }
 
 #home {
@@ -123,17 +127,17 @@ body {
     line-height: 1.6;
 }
 
-#about_text .pink_text {
+#about_text p {
     margin-bottom: 30px;
 }
 
 #clients {
-    font-size: 17px;
+    font-size: 16px;
     overflow: hidden;
 }
 
 .bold_text {
-    font-weight: bold;
+    font-family: 'proxima_novaextrabold';
     margin: 30px 0px 8px 0px;
 }
 
@@ -143,17 +147,19 @@ body {
 
 #testimonials {
     width: 400px;
-    font-size: 17px;
+    font-size: 16px;
     overflow: hidden;
     line-height: 1.6;
 }
 
 #links {
     
-    font-size: 17px;
+    font-size: 16px;
     overflow: hidden;
     line-height: 1.6;
 }
+
+#links a { text-decoration: none; color: #a40f84; }
 
 #links_text {
     margin-left: 50px;
@@ -161,7 +167,7 @@ body {
 
 #contact {
     
-    font-size: 17px;
+    font-size: 16px;
     overflow: hidden;
     line-height: 1.6;
 }
@@ -181,6 +187,21 @@ body {
 
 #footer {
     padding: 0px 0px 20px 0px;
+    overflow: auto;
+}
+
+#left_footer {
+    width: 500px;
+    float: left;
+}
+
+#right_footer {
+    float: right;
+    padding-top: 10px;
+}
+
+#right_footer img {
+    margin-right: 10px;
 }
 
 #footer ul {
