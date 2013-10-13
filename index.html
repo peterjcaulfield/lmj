@@ -4,7 +4,13 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
      <script src="js/main.js" type="text/javascript"></script>
-  </head>
+     <style>
+       @media (max-width: 960px) {
+        #container #nav li { display: block; padding-top: 5px; } 
+        #right_footer { float: none; margin-top: 30px; } 
+       }
+     </style>
+   </head>
   <div id="container">
     <div id="header">
       <div id="logo" class="nav"><a href="home"><img id="logo-img" src="img/logo.png" height="220" width="406"/></a></div>
@@ -24,8 +30,10 @@
       <div id="home" class="section">
       </div>
       <div id="about" class="section padded">
-        <img src="img/about.png" height="268" width="302">
-        <div id="about_text" class="right">
+        <div id="about_img">
+          <img src="img/about.png" height="268" width="302" class="left">
+      </div>
+        <div id="about_text" class="left">
           <p class="pink_text bold">
           LMJ Public Relations is an entertainment public relations and marketing firm based in New York City.
         </p>
@@ -62,7 +70,9 @@
         Drivers Wanted (Documentary)
       </div>
       <div id="links" class="section padded">
-        <img src="img/arrow.png" class="left"/>
+        <div id="links_img">
+          <img src="img/arrow.png" class="left"/>
+        </div>
         <div id="links_text" class="left">
           <p><span class="bold">Aleta Chappelle</span>, Macbett</p>
           <p class="bold"><a href="http://blogs.indiewire.com/shadowandact/terrence-howard-sanaa-lathan-and-harry-lennix-to-topline-caribbean-set-version-of-shakespeares-macbeth" target="_blank">Indiewire</a></p>
@@ -80,7 +90,9 @@
         </div>
       </div>
       <div id="contact" class="section padded">
-        <img src="img/arrow.png" class="left"/>
+        <div id="contact_img">
+          <img src="img/arrow.png" class="left"/>
+        </div>
         <div id="contact_text" class="left">
           <p>Please forward all questions, comments and concerns to:</p>
           <p class="contact bold"><a href="mailto:lisa@lmjpublicrelations.com" class="pink_text">lisa@lmjpublicrelations.com</a></p>
